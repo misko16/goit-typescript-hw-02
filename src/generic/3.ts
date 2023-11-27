@@ -4,7 +4,7 @@
 */
 
 function merge<T, U>(objA: T, objB: U): T & U {
-  const result = { ...objA, ...objB } as unknown;
+  const result = { ...objA, ...objB };
   return result as T & U;
 }
 
